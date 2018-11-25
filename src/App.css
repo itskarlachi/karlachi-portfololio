@@ -1,0 +1,69 @@
+.border {
+  padding: 3em;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100%;
+  background: #1e1e1e;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+  "nv nv nv"
+  "ct ct ct"
+  "md md md";
+}
+
+.text {
+
+  align-self: center;
+  text-align: center;
+  width: 100%;
+}
+
+.nav {
+  min-height: 136px;
+  grid-area: nv;
+}
+
+.media {
+  grid-area: md;
+  min-height: 136px;
+}
+
+.nav > ul > li {
+  margin-right: 32px;
+  display: inline-block;
+  list-style: none;
+  font-size: 24px;
+}
+
+.content {
+  grid-area: ct;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.blog-name {
+  font-size: 140px;
+  line-height: 0;
+}
+
+.author-name {
+  font-size: 60px;
+  line-height: 0;
+}
+
+.hr {
+  width: 716px;
+  height: 2px;
+}
+
+.wheel {
+  grid-area: wh;
+}
+
