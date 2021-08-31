@@ -5,19 +5,19 @@
 
   <div class="center">
     <h2 class="title">Hi, I'm Karla Chi</h2> 
-    <p class="text">I am a digital designer focused on <bold class="bold">Product Design</bold>. Currently, I’m working as a freelance product designer in Spain ✨</p>
+    <p class="text">I am a digital designer focused on <strong lass="bold">Product Design</strong>. Currently, I’m working as a freelance product designer in Spain ✨</p>
    </div>
 </div>
 </template>
 
 <style scoped lang="scss">
   .content {
-    height: 100%;
+    // height: 100%;
     color:white;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px 32px;
+    padding: 16px 32px 0 32px;
 
     .border {
       height: 50vw;

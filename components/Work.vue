@@ -13,14 +13,14 @@
       <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
-    <div class="project">
+    <div class="project bordered">
       <img src="/cutekittie.jpg" alt="" class="image">
       <h3 class="title">Name Of the project</h3>
       <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </div>
   <div class="column-2" >
-    <div class="project">
+    <div class="project bordered">
       <img src="/cutekittie.jpg" alt="" class="image">
       <h3 class="title">NameOf the project</h3>
       <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -45,7 +45,7 @@
   .layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 48px;
+    grid-gap: 32px;
     padding: 32px;
 
     .column-2 {
@@ -53,23 +53,25 @@
     }
 
     .project {
-      border-radius: 8px;
       padding: 16px;
-      padding-right: 32px;
-      padding-bottom: 32px;
-      border: 1px solid #fff;
       margin-bottom: 170px;
-      position: relative;
 
-      &::before {
-        border-radius: 8px;
+      &.bordered {
+        position: relative;
         border: 1px solid #fff;
-        content: "";
-        position: absolute;
-        top: -16px;
-        left: -16px;
-        right: 16px;
-        bottom: 16px;
+        border-radius: 8px;
+        padding-right: 32px;
+        padding-bottom: 32px;
+        &::before {
+          border-radius: 8px;
+          border: 1px solid #fff;
+          content: "";
+          position: absolute;
+          top: -16px;
+          left: -16px;
+          right: 16px;
+          bottom: 16px;
+        }
       }
 
 

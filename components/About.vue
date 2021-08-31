@@ -1,6 +1,6 @@
 <template>
-   <div class="layout-x">
-     <!-- <img class="border" src="border.svg" alt=""> -->
+   <div class="layout-x bordered">
+     <img class="draft-top" src="/draft-top.svg" alt="">
      <img class="profile-image" src="" alt="">
 
       <div class="greetings">
@@ -11,9 +11,9 @@
 
         <h4 class="title">U can find me here:</h4>
         <ul class="media">
-          <li><a class="link">Twitter</a></li>
-          <li><a class="link">Dribble</a></li>
-          <li><a class="link">Linkedin</a></li>
+          <li><a class="link" href="https://twitter.com/itskarlachi">Twitter</a><span class="dot">·</span></li>
+          <li><a class="link" href="https://dribbble.com/karlachi">Dribble</a><span class="dot">·</span></li>
+          <li><a class="link" href="https://www.linkedin.com/in/karlavidalchi/">Linkedin</a></li>
         </ul>
       </div>
 
@@ -24,6 +24,7 @@
       </p>
       <p class="text">I'm equally passionate about history and art.</p>
      </div>
+     <img class="draft-bottom" src="/draft-top.svg" alt="">
   </div> 
 </template>
 
@@ -32,49 +33,109 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  // grid-column-gap: 124px;
   max-width: 90%;
-  background: red;
-  background-image: url("/border-cut.svg");
-  background-repeat: no-repeat;
-  // background-size: contain;
-  object-fit: fill;
-  background-position-y: initial;
-  background-position-x: right;
   align-items: center;
   justify-items: center;
+  padding-bottom: 32px;
+  margin-top: 32px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  margin-left: -8px;
+  border-bottom: 0;
+  z-index: 1;
 
-  .border {
+  &.bordered {
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    border-bottom-right-radius: 0;
+    border-bottom: none;
+
+    &::before {
+      border-radius: 8px;
+      border: 1px solid #fff;
+      content: "";
+      position: absolute;
+      top: -16px;
+      left: -16px;
+      right: 16px;
+      bottom: 16px;
+      border-bottom: 0;
+      border-bottom-right-radius: 0;
+      margin-bottom: -16px;
+    }
+  }
+
+  .draft-top {
     position: absolute;
-    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .draft-bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
   }
 
   .profile-image {
-    width: 344px;
+    max-width: 344px;
+    width: 100%; 
     height: 344px;
     background: grey;
     border-radius: 50%;
-    margin-bottom: 56px;
-  }
-
-  .greetings {
-    max-width: 450px;
-  }
-
-  .hobbies {
-    max-width: 450px;
+    z-index: 2;
   }
 
   .title {
     color: white;
     font-weight: 500;
     font-size: 32px;
-    margin-bottom: 8px;
   }
+
+  .greetings {
+    max-width: 450px;
+    z-index: 1;
+
+    .title {
+      margin: 16px 0 16px 0;
+    }
+  }
+
+  .hobbies {
+    max-width: 450px;
+    
+    .title {
+      margin: 16px 0 16px 0;
+    }
+  }
+
 
   .media {
     display: flex;
-    text-decoration:none;
+    padding: 0;
+    margin-bottom: 0;
+
+    li {
+      margin-right: 16px;
+      list-style: none;
+
+      .link {
+        color: #F90;
+        font-size: 24px;
+        text-decoration: underline;
+        font-weight: 300;
+      }
+
+      .dot {
+        font-weight: bold;
+        margin-left: 16px;
+        color: white;
+        text-decoration: none;
+      }
+    }
   }
 
   .text {
@@ -83,5 +144,74 @@
     font-size: 24px;
   }
 
+  .panel {
+    position: absolute;
+    width: 100%;
+    background:white;
+    height: 32px;
+    bottom: 0;
+  }
 }
+
+@media screen and (max-width: 1180px) {
+  .layout-x {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+
+    &.bordered {
+      border: 0;
+      padding: 32px;
+
+      &::before {
+        border: 0;
+      }
+    }
+
+    .media {
+      li {
+        margin: 0;
+      .dot {
+        margin: 0;
+        margin: 0 6px 0 6px;
+      }
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .layout-x {
+    .draft-top {
+      display: none;
+    }
+
+    .draft-bottom {
+      display: none;
+    }
+
+    &.bordered {
+      border: 0;
+      padding: 32px;
+
+      &::before {
+        border: 0;
+      }
+    }
+
+    .media {
+      li {
+        margin: 0;
+      .dot {
+        margin: 0;
+        margin: 0 6px 0 6px;
+      }
+      }
+    }
+
+  }
+}
+
 </style>

@@ -8,9 +8,6 @@
         <NuxtLink class="link" to="/work">WORK</NuxtLink>
       </li>
       <li class="link">
-        <NuxtLink class="link" to="/resume">RESUME</NuxtLink>
-      </li>
-      <li class="link">
         <NuxtLink class="link" to="/about">ABOUT</NuxtLink>
       </li>
     </ul>
