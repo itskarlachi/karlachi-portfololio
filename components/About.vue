@@ -1,7 +1,7 @@
 <template>
    <div class="layout-x bordered">
      <img class="draft-top" src="/draft-top.svg" alt="">
-     <img class="profile-image" src="" alt="">
+     <img class="profile-image" src="/portrait.jpeg" alt="">
 
       <div class="greetings">
         <h4 class="title">Hey,</h4>

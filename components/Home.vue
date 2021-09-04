@@ -12,7 +12,6 @@
 
 <style scoped lang="scss">
   .content {
-    // height: 100%;
     color:white;
     display: flex;
     align-items: center;
@@ -20,7 +19,7 @@
     padding: 16px 32px 0 32px;
 
     .border {
-      height: 50vw;
+      height: 40vw;
       position: absolute;
       left: 0;
       bottom: 0;
