@@ -4,7 +4,7 @@
     <div class="project bordered">
       <img src="~/assets/project_chat.jpg" alt="" class="image">
       <h3 class="title">Chat</h3>
-      <p class="description">A chat inspo I did for fun</p>
+      <p class="description">A chat inspo I did for fun.</p>
     </div>
 
     <div class="project">
