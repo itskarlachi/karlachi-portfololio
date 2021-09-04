@@ -1,4 +1,4 @@
-const base = '/karlachi-portfolio'
+const base = '/'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
