@@ -24,14 +24,14 @@
       </p>
       <p class="text">I'm equally passionate about history and art.</p>
      </div>
-     <img class="draft-bottom" src="~/assets/draft-top.svg" alt="">
+     <img class="draft-bottom" src="~/assets/squiggles.svg" alt="">
   </div> 
 </template>
 
 <style scoped lang="scss">
 .layout-x {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 15% 1fr 1fr;
   grid-template-rows: 1fr;
   max-width: 90%;
   align-items: center;
@@ -68,16 +68,18 @@
 
   .draft-top {
     position: absolute;
-    top: 0;
+    top: -72px;
     left: 0;
     z-index: 1;
+    width: 200px;
   }
 
   .draft-bottom{
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -80px;
     z-index: 1;
+    width: 260px;
   }
 
   .profile-image {
@@ -87,6 +89,7 @@
     background: grey;
     border-radius: 50%;
     z-index: 2;
+    grid-column: 2;
   }
 
   .title {
@@ -98,6 +101,7 @@
   .greetings {
     max-width: 450px;
     z-index: 1;
+    grid-column: 3;
 
     .title {
       margin: 16px 0 16px 0;
@@ -106,7 +110,8 @@
 
   .hobbies {
     max-width: 450px;
-    
+    grid-column: 2;
+
     .title {
       margin: 16px 0 16px 0;
     }
@@ -169,6 +174,25 @@
       }
     }
 
+    .profile-image {
+      grid-column: 1;
+    }
+
+    .greetings {
+      grid-column: 1;
+    }
+    .hobbies {
+      grid-column: 1;
+    }
+
+
+  .draft-bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: 260px;
+  }
     .media {
       li {
         margin: 0;
