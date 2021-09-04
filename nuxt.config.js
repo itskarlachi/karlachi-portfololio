@@ -1,9 +1,12 @@
+const base = '/karlachi-portfolio'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   router: {
-    linkExactActiveClass: 'exact-active-link'
+    linkExactActiveClass: 'exact-active-link',
+    base,
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -25,7 +28,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'I am Karla Chi, a freelance digital designer focus on Product Designer. I\'m a aesthetic and design lover',
+        content: 'I am Karla Chi, a freelance digital designer focus on Product Design. I\'m a aesthetic and design lover',
       },
       {
         hid: 'twitter:title',
@@ -35,7 +38,7 @@ export default {
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'I am Karla Chi, a freelance digital designer focus on Product Designer. I\'m a aesthetic and design lover',
+        content: 'I am Karla Chi, a freelance digital designer focus on Product Design. I\'m a aesthetic and design lover',
       },
       // {
       //   hid: 'twitter:image',
@@ -55,7 +58,7 @@ export default {
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'I am Karla Chi, a freelance digital designer focus on Product Designer. I\'m a aesthetic and design lover',
+        content: 'I am Karla Chi, a freelance digital designer focus on Product Design. I\'m a aesthetic and design lover',
       },
       // {
       //   hid: 'og:image',
@@ -74,7 +77,7 @@ export default {
       // },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: base === '/' ? '/favicon.ico' : `${base}/favicon.ico` }
     ]
   },
 
