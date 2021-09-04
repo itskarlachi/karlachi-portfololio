@@ -1,7 +1,7 @@
 <template>
 <div class="content">
-  <img src="/border_home.svg" alt="" class="border">
-  <img src="/geometric.svg" alt="" class="geometric">
+  <img src="~/assets/border_home.svg" alt="" class="border">
+  <img src="~/assets/geometric.svg" alt="" class="geometric">
 
   <div class="center">
     <h2 class="title">Hi, I'm Karla Chi</h2> 

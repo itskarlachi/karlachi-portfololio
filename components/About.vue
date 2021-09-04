@@ -1,7 +1,7 @@
 <template>
    <div class="layout-x bordered">
-     <img class="draft-top" src="/draft-top.svg" alt="">
-     <img class="profile-image" src="/portrait.jpeg" alt="">
+     <img class="draft-top" src="~/assets/draft-top.svg" alt="">
+     <img class="profile-image" src="~/assets/portrait.jpeg" alt="">
 
       <div class="greetings">
         <h4 class="title">Hey,</h4>
@@ -24,7 +24,7 @@
       </p>
       <p class="text">I'm equally passionate about history and art.</p>
      </div>
-     <img class="draft-bottom" src="/draft-top.svg" alt="">
+     <img class="draft-bottom" src="~/assets/draft-top.svg" alt="">
   </div> 
 </template>
 
