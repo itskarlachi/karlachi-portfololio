@@ -4,8 +4,8 @@
   <img src="~/assets/geometric.svg" alt="" class="geometric">
 
   <div class="center">
-    <h2 class="title">Hi, I'm Karla Chi</h2> 
-    <p class="text">I am a digital designer focused on <strong lass="bold">Product Design</strong>. Currently, I’m working as a freelance product designer in Spain ✨</p>
+    <h1 class="title">Hi, I'm Karla Chi</h1> 
+    <p class="text">I am a digital designer focused on <strong class="bold">Product Design</strong>. Currently, I’m working as a freelance product designer in Spain ✨</p>
    </div>
 </div>
 </template>
@@ -34,12 +34,15 @@
     .center {
       max-width: 420px;
 
-    .title {
+      .title {
+        font-weight: 400;
         font-size: 32px;
+        margin-bottom: 8px;
       }
       .text {
         font-weight: 200;
         font-size: 30px;
+        margin: 0;
 
         .bold {
           font-weight: 400;

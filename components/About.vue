@@ -1,5 +1,5 @@
 <template>
-   <div class="layout-x bordered">
+   <div class="layout-about bordered">
      <img class="draft-top" src="~/assets/draft-top.svg" alt="">
      <img class="profile-image" src="~/assets/portrait.jpeg" alt="">
 
@@ -11,9 +11,9 @@
 
         <h4 class="title">U can find me here:</h4>
         <ul class="media">
-          <li><a class="link" href="https://twitter.com/itskarlachi">Twitter</a><span class="dot">·</span></li>
-          <li><a class="link" href="https://dribbble.com/karlachi">Dribble</a><span class="dot">·</span></li>
-          <li><a class="link" href="https://www.linkedin.com/in/karlavidalchi/">Linkedin</a></li>
+          <li><a class="link" rel="noopener noreferrer" target="_blank" href="https://twitter.com/itskarlachi">Twitter</a><span class="dot">·</span></li>
+          <li><a class="link" rel="noopener noreferrer" target="_blank" href="https://dribbble.com/karlachi">Dribble</a><span class="dot">·</span></li>
+          <li><a class="link" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/karlavidalchi/">Linkedin</a></li>
         </ul>
       </div>
 
@@ -29,20 +29,20 @@
 </template>
 
 <style scoped lang="scss">
-.layout-x {
+.layout-about {
   display: grid;
   grid-template-columns: 15% 1fr 1fr;
   grid-template-rows: 1fr;
   max-width: 90%;
   align-items: center;
   justify-items: center;
-  padding-bottom: 32px;
   margin-top: 32px;
-  padding-right: 16px;
   box-sizing: border-box;
   margin-left: -8px;
   border-bottom: 0;
   z-index: 1;
+  padding: 16px 32px;
+  padding-bottom: 32px;
 
   &.bordered {
     position: relative;
@@ -50,6 +50,7 @@
     border-radius: 8px;
     border-bottom-right-radius: 0;
     border-bottom: none;
+    margin-bottom: 186px;
 
     &::before {
       border-radius: 8px;
@@ -94,8 +95,8 @@
 
   .title {
     color: white;
-    font-weight: 500;
-    font-size: 32px;
+    font-weight: 400;
+    font-size: 28px;
   }
 
   .greetings {
@@ -147,6 +148,7 @@
     color: white;
     margin: 0 0 16px 0;
     font-size: 24px;
+    font-weight: 200;
   }
 
   .panel {
@@ -159,7 +161,7 @@
 }
 
 @media screen and (max-width: 1180px) {
-  .layout-x {
+  .layout-about {
     grid-template-columns: 1fr;
     max-width: 100%;
     padding: 0;
@@ -207,7 +209,7 @@
 }
 
 @media screen and (max-width: 960px) {
-  .layout-x {
+  .layout-about {
     .draft-top {
       display: none;
     }
