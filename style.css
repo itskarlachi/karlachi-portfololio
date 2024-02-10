@@ -1,0 +1,162 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-snap-points-y: repeat(100dvh);
+}
+
+body {
+  background-color: #efeae3;
+  font-family: montserrat;
+}
+
+.section {
+  scroll-snap-align: start;
+  min-height: 100dvh;
+}
+
+/* navbar */
+.topbar {
+  width: 100%;
+  position:fixed; 
+  display: flex;
+  padding: 48px 56px;
+  justify-content: space-between;
+}
+
+.topbar .title {
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.topbar .navbar ul {
+  display: flex;
+}
+
+.topbar .navbar ul .btn {
+  border-radius: 32px;
+  border: 2px solid #000;
+  background: #efeae3;
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  box-sizing: border-box;
+}
+
+.topbar .navbar ul .btn:hover {
+  border: 2px solid #FF5016;
+}
+
+.topbar .navbar ul .about {
+  margin-right: 16px;
+}
+
+.topbar .navbar ul .projects {}
+
+
+/* HOME  */
+
+.ellipse {
+  position: absolute;
+  z-index: 2;
+  top: 96px;
+}
+
+.circle {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+}
+
+.home {
+  min-height: 100dvh;
+  padding: 48px 56px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+.home .title {
+  font-size: 24px;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home .title .name {
+  font-size: 140px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  line-height: 100px;
+  z-index: 3;
+}
+
+.home .title .hr1 {
+  border: 1.5px solid black;
+  border-radius: 5px;
+  width: 900px;
+  align-self: end;
+  z-index: 1;
+}
+
+.home .quote {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: end;
+  justify-content: end;
+  z-index: 2;
+}
+
+.home .quote .help {
+  text-align: right;
+  font-size: 50px;
+  font-weight: 900;
+  max-width: 600px;
+  margin-bottom: 16px;
+}
+
+.hr2 {
+  border: 1.5px solid black;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.text {
+  display: flex;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.titletext {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.textwork {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+img {
+  max-width: 600px;
+}
+
+.job1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.job2 {
+  display: flex;
+}
+
+.job3 {
+  display: flex;
+}
+
+.job4 {
+  display: flex;
+}
