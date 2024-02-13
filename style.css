@@ -1,3 +1,7 @@
+.bold {
+  font-weight: bold;  
+}
+
 html {
   scroll-snap-type: y mandatory;
   scroll-snap-points-y: repeat(100dvh);
@@ -69,6 +73,12 @@ body {
   right: 0;
 }
 
+.circle2 {
+  right: 0;
+  position: absolute;
+  bottom: 0;
+}
+
 .home {
   min-height: 100dvh;
   padding: 48px 56px;
@@ -98,6 +108,7 @@ body {
   width: 900px;
   align-self: end;
   z-index: 1;
+  width: 100%;
 }
 
 .home .quote {
@@ -123,6 +134,55 @@ body {
   width: 100%;
 }
 
+
+/* section 2 */
+.me {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100dvh;
+  padding: 48px 56px;
+  display: grid;
+  position: relative;
+}
+
+.me .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.me .content .picture {
+  width: 600px;
+  height: 400px;
+  margin-right: 100px;
+}
+
+.me .content .description {
+  max-width: 765px;
+}
+
+.me .content .description .paragraph {
+  margin-bottom: 16px;
+}
+
+.me .quote {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: end;
+  justify-content: end;
+  z-index: 2;
+}
+
+.me .quote .help {
+  text-align: right;
+  font-size: 50px;
+  font-weight: 900;
+  max-width: 600px;
+  margin-bottom: 16px;
+}
+
+/*  */
 .text {
   display: flex;
   font-size: 20px;
@@ -144,19 +204,81 @@ img {
   max-width: 600px;
 }
 
-.job1 {
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.jobs {
+  padding: 100px 56px;
   display: flex;
   flex-direction: column;
 }
 
-.job2 {
+.work .jobs .job {
   display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
 }
 
-.job3 {
-  display: flex;
+.work .jobs .job .image {
+  width: 500px;
+  height: 400px;
+  margin-right: 56px;
 }
 
-.job4 {
+.work .jobs .job .text {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.work .jobs .job .title{
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+.work .jobs .job .text .description {}
+
+.work .footer {
+  width: 100%;
+  color: white;
+  background: black;
+  padding: 78px 56px;
+}
+
+.work .footer .title {
+  z-index: 3;
+  font-size: 56px;
+  margin-bottom: 24px;
+  font-weight: 900;
+  text-align: right;
+  position: relative;
+}
+
+.work .footer .hr {
+  z-index: 3;
+  width: 100%;
+  border-top: 1px solid white;
+  margin-bottom: 56px;
+  position: relative;
+}
+
+.work .footer .links {
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work .footer .links .link {
+  z-index: 3;
+  font-size: 24px;
+}
+.ellipse2 {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
 }
