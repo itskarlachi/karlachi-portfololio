@@ -20,10 +20,10 @@ body {
 /* navbar */
 .topbar {
   width: 100%;
-  position:fixed; 
   display: flex;
-  padding: 48px 56px;
+  /* padding: 48px 56px; */
   justify-content: space-between;
+  z-index: 2;
 }
 
 .topbar .title {
@@ -45,6 +45,10 @@ body {
   align-items: center;
   font-size: 24px;
   box-sizing: border-box;
+  cursor: pointer;
+}
+.topbar .navbar ul .btn.selected {
+  border: 2px solid #FF5016;
 }
 
 .topbar .navbar ul .btn:hover {
@@ -83,7 +87,7 @@ body {
   min-height: 100dvh;
   padding: 48px 56px;
   display: grid;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: auto 2fr 1fr;
 }
 
 .home .title {
@@ -95,7 +99,7 @@ body {
 }
 
 .home .title .name {
-  font-size: 140px;
+  font-size: clamp(3rem, 10vw, 8.7rem);
   font-weight: 700;
   margin-bottom: 40px;
   line-height: 100px;
@@ -122,7 +126,7 @@ body {
 
 .home .quote .help {
   text-align: right;
-  font-size: 50px;
+  font-size: clamp(24px, 4vw, 50px);
   font-weight: 900;
   max-width: 600px;
   margin-bottom: 16px;
@@ -138,7 +142,7 @@ body {
 /* section 2 */
 .me {
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: auto 1fr auto;
   min-height: 100dvh;
   padding: 48px 56px;
   display: grid;
@@ -159,10 +163,13 @@ body {
 
 .me .content .description {
   max-width: 765px;
+  font-size: 16px;
 }
 
 .me .content .description .paragraph {
   margin-bottom: 16px;
+  position: relative;
+  z-index: 2;
 }
 
 .me .quote {
@@ -176,7 +183,7 @@ body {
 
 .me .quote .help {
   text-align: right;
-  font-size: 50px;
+  font-size: clamp(24px, 4vw, 50px);
   font-weight: 900;
   max-width: 600px;
   margin-bottom: 16px;
@@ -211,10 +218,11 @@ img {
   position: relative;
 }
 
-.jobs {
-  padding: 100px 56px;
+.work .jobs {
+  padding: 100px 0;
   display: flex;
   flex-direction: column;
+  padding: 48px 56px;
 }
 
 .work .jobs .job {
@@ -224,7 +232,7 @@ img {
 }
 
 .work .jobs .job .image {
-  width: 500px;
+  width: 600px;
   height: 400px;
   margin-right: 56px;
 }
@@ -233,6 +241,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  font-size: 16px;
 }
 
 .work .jobs .job .title{
@@ -251,7 +260,7 @@ img {
 
 .work .footer .title {
   z-index: 3;
-  font-size: 56px;
+  font-size: clamp(32px, 7vw, 50px);
   margin-bottom: 24px;
   font-weight: 900;
   text-align: right;
@@ -281,4 +290,82 @@ img {
   z-index: 1;
   bottom: 0;
   left: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .me .content {
+    flex-direction: column;
+  }
+  .me .content .picture {
+    margin: 0 0 40px 0;
+  }
+
+  .topbar {
+    margin-bottom: 56px;
+  }
+
+  .me .content .picture {
+    margin-bottom: 80px;
+    width: 100%;
+  }
+
+  .me .content .description {
+    max-width: none;
+  }
+
+  .work .jobs .job {
+    flex-direction: column;
+    align-items: center;
+  }
+  .work .jobs .job .image {
+    margin: 0 0 32px 0;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .me .content {
+    flex-direction: column;
+  }
+  .me .content .picture {
+    margin: 0 0 40px 0;
+  }
+
+  .work .jobs .job {
+    flex-direction: column;
+    align-items: center;
+  }
+  .work .jobs .job .image {
+    margin: 0 0 32px 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .home .topbar {
+    margin-bottom: 0;
+  }
+
+  .topbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .topbar .title {
+    margin-bottom: 24px;
+  }
+
+  
+.topbar .navbar ul .btn {
+  margin-right: 0px 
+}
+
+.topbar .navbar ul .btn {
+  margin-right: 0px 
+}
+.topbar .navbar ul .about {
+  margin-right: 40px 
+}
+
+
 }
