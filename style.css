@@ -1,5 +1,5 @@
 .bold {
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 html {
@@ -10,6 +10,12 @@ html {
 body {
   background-color: #efeae3;
   font-family: montserrat;
+
+  cursor: url("/images/cursor.png"), auto !important;
+}
+
+a:hover {
+  cursor: url("/images/cursor_pointer.png"), auto !important;
 }
 
 .section {
@@ -48,19 +54,19 @@ body {
   cursor: pointer;
 }
 .topbar .navbar ul .btn.selected {
-  border: 2px solid #FF5016;
+  border: 2px solid #ff5016;
 }
 
 .topbar .navbar ul .btn:hover {
-  border: 2px solid #FF5016;
+  border: 2px solid #ff5016;
 }
 
 .topbar .navbar ul .about {
   margin-right: 16px;
 }
 
-.topbar .navbar ul .projects {}
-
+.topbar .navbar ul .projects {
+}
 
 /* HOME  */
 
@@ -137,7 +143,6 @@ body {
   border-radius: 5px;
   width: 100%;
 }
-
 
 /* section 2 */
 .me {
@@ -232,8 +237,8 @@ img {
 }
 
 .work .jobs .job .image {
-  width: 600px;
-  height: 400px;
+  width: 427px;
+  height: 320px;
   margin-right: 56px;
 }
 
@@ -244,12 +249,13 @@ img {
   font-size: 16px;
 }
 
-.work .jobs .job .title{
+.work .jobs .job .title {
   margin-bottom: 24px;
   font-weight: bold;
 }
 
-.work .jobs .job .text .description {}
+.work .jobs .job .text .description {
+}
 
 .work .footer {
   width: 100%;
@@ -355,17 +361,14 @@ img {
     margin-bottom: 24px;
   }
 
-  
-.topbar .navbar ul .btn {
-  margin-right: 0px 
-}
+  .topbar .navbar ul .btn {
+    margin-right: 0px;
+  }
 
-.topbar .navbar ul .btn {
-  margin-right: 0px 
-}
-.topbar .navbar ul .about {
-  margin-right: 40px 
-}
-
-
+  .topbar .navbar ul .btn {
+    margin-right: 0px;
+  }
+  .topbar .navbar ul .about {
+    margin-right: 40px;
+  }
 }
