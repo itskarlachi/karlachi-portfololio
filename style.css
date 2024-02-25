@@ -158,10 +158,11 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 .me .content .picture {
-  width: 600px;
+  width: 400px;
   height: 400px;
   margin-right: 100px;
 }
@@ -302,17 +303,15 @@ img {
   .me .content {
     flex-direction: column;
   }
-  .me .content .picture {
-    margin: 0 0 40px 0;
-  }
 
   .topbar {
     margin-bottom: 56px;
   }
 
   .me .content .picture {
-    margin-bottom: 80px;
-    width: 100%;
+    margin: 0 0 80px 0;
+    width: 400px;
+    height: 400px;
   }
 
   .me .content .description {
@@ -334,6 +333,8 @@ img {
   }
   .me .content .picture {
     margin: 0 0 40px 0;
+    min-width: 350px;
+    min-height: 350px;
   }
 
   .work .jobs .job {
@@ -371,4 +372,36 @@ img {
   .topbar .navbar ul .about {
     margin-right: 40px;
   }
+
+  .me .content .picture {
+    margin: 0 0 40px 0;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+.home {
+  padding: 48px 24px;
+}
+
+.me {
+  padding: 48px 24px;
+}
+
+.work .jobs {
+  padding: 50px 0;
+  padding: 48px 24px;
+}
+
+
+.work .jobs .job {
+  margin-bottom: 64px;
+}
+
+.work .footer {
+  padding: 56px 24px;
+}
 }
