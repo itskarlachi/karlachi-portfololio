@@ -380,28 +380,25 @@ img {
   }
 }
 
-
 @media only screen and (max-width: 500px) {
+  .home {
+    padding: 48px 24px;
+  }
 
-.home {
-  padding: 48px 24px;
-}
+  .me {
+    padding: 48px 24px;
+  }
 
-.me {
-  padding: 48px 24px;
-}
+  .work .jobs {
+    padding: 50px 0;
+    padding: 48px 24px;
+  }
 
-.work .jobs {
-  padding: 50px 0;
-  padding: 48px 24px;
-}
+  .work .jobs .job {
+    margin-bottom: 64px;
+  }
 
-
-.work .jobs .job {
-  margin-bottom: 64px;
-}
-
-.work .footer {
-  padding: 56px 24px;
-}
+  .work .footer {
+    padding: 56px 24px;
+  }
 }
