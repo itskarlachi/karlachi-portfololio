@@ -2,16 +2,16 @@
   font-weight: bold;
 }
 
-html {
+/* html {
   scroll-snap-type: y mandatory;
   scroll-snap-points-y: repeat(100dvh);
-}
+} */
 
 body {
   background-color: #efeae3;
   font-family: montserrat;
 
-  cursor: url("/images/cursor.png"), auto !important;
+  /* cursor: url("/images/cursor.png"), auto !important; */
 }
 
 a:hover {
@@ -19,7 +19,7 @@ a:hover {
 }
 
 .section {
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   min-height: 100dvh;
 }
 
@@ -224,6 +224,10 @@ img {
   position: relative;
 }
 
+.work .topbar {
+  margin-bottom: 112px;
+}
+
 .work .jobs {
   padding: 100px 0;
   display: flex;
@@ -285,7 +289,7 @@ img {
 .work .footer .links {
   z-index: 3;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .work .footer .links .link {
@@ -302,6 +306,11 @@ img {
 @media only screen and (max-width: 1024px) {
   .me .content {
     flex-direction: column;
+  }
+
+
+  .work .topbar {
+    margin-bottom: 56px;
   }
 
   .topbar {
@@ -349,6 +358,10 @@ img {
 @media only screen and (max-width: 700px) {
   .home .topbar {
     margin-bottom: 0;
+  }
+  
+  .work .topbar {
+    margin-bottom: 40px;
   }
 
   .topbar {
